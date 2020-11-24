@@ -1,5 +1,9 @@
 # Blockchain Oracle Telegram
 
+FIRSTLY:
+
+# PLEASE REPLACE "{$YOUR_PATH}" WITH YOUR LOCAL PROJECT FOLDER PATH IN utils.py AND bot.py!
+
 Here below you can download latest Takamaka-Blockchain jar resources
 
 https://downloads.takamaka.dev/FILES/takamakachain-1.0-SNAPSHOT-jar-with-dependencies.jar
