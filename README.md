@@ -2,7 +2,7 @@
 
 FIRSTLY:
 
-# PLEASE REPLACE "{$YOUR_PATH}" WITH YOUR LOCAL PROJECT FOLDER PATH IN utils.py AND bot.py!
+## PLEASE REPLACE "{$YOUR_PATH}" WITH YOUR LOCAL PROJECT FOLDER PATH IN utils.py AND bot.py!
 
 Here below you can download latest Takamaka-Blockchain jar resources
 
