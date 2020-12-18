@@ -53,11 +53,11 @@ def main():
                 if trx_type == 'charge':
                     telegram_users_to_be_processed[
                         upper_dict[key_to_be_fetched].split("telegram_user_id=")[1].split("telegram_user_name=")[
-                            0]] = msg_suffix.format(upper_dict[key_to_be_fetched].split("telegram_user_name=")[1],
+                            0]+'_'+str(upper_dict['SITH'])] = msg_suffix.format(upper_dict[key_to_be_fetched].split("telegram_user_name=")[1],
                                                     upper_dict['SITH'])
                 else:
                     telegram_users_to_be_processed[
-                        upper_dict[key_to_be_fetched].split("telegram_user_id=")[1].split("telegram_user_name=")[0]] = \
+                        upper_dict[key_to_be_fetched].split("telegram_user_id=")[1].split("telegram_user_name=")[0]+'_'+str(upper_dict['SITH'])] = \
                         msg_suffix.format(
                             upper_dict[key_to_be_fetched].split("telegram_user_name=")[1],
                             utils.convert_from_b64_url_to_hex(upper_dict['SITH']),
@@ -68,7 +68,6 @@ def main():
 
         print(telegram_users_to_be_processed)
         if len(telegram_users_to_be_processed.items()) > 0:
-
             for telegram_reply_to_id, msg in telegram_users_to_be_processed.items():
                 url = 'https://api.telegram.org/bot{}/sendMessage'.format(utils.telegram_token)
                 data = {'chat_id': telegram_reply_to_id, 'text': utils.clean_string(msg)}
