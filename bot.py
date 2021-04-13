@@ -10,8 +10,8 @@ updater = Updater(token='YOUR_TELEGRAM_TOKEN', use_context=True)
 dispatcher = updater.dispatcher
 bash_command_pay = "java -cp ./takamakachain-1.0-SNAPSHOT-jar-with-dependencies.jar " \
                    " -Djava.awt.headless=true " \
-                   "com.h2tcoin.takamakachain.main.DirectCall -e=test -w=walletIsacco -s=asdasdasd -i=0 -p=\"{} 10 " \
-                   "10\" -m=\"telegram_user_id={}telegram_user_name={}\" "
+                   "com.h2tcoin.takamakachain.main.DirectCall -e=test -w=walletIsacco -s=asdasdasd -i=0 -p=\"{} 50 " \
+                   "50\" -m=\"telegram_user_id={}telegram_user_name={}\" "
 
 bash_command_sign = "java -cp ./takamakachain-1.0-SNAPSHOT-jar-with-dependencies.jar " \
                     " -Djava.awt.headless=true " \
