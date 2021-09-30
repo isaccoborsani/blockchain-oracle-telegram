@@ -32,7 +32,10 @@ def main():
             for key, val in single_trx.items():
                 upper_dict[key.upper()] = val
 
-            if upper_dict['SITH'] not in siths and 'MESSAGE' in upper_dict and upper_dict['MESSAGE'] != '':
+            if upper_dict['SITH'] not in siths\
+                    and 'MESSAGE' in upper_dict\
+                    and upper_dict['MESSAGE'] is not None\
+                    and upper_dict['MESSAGE'] != '':
 
                 trx_type = 'charge'
                 if 'upload_file_trx' in upper_dict['MESSAGE']:
